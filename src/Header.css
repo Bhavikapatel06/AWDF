@@ -1,0 +1,18 @@
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#logo{
+    color: Black;
+}
+
+#navLinks{
+    display:flex;
+    justify-content: space-between;
+}
+
+.navBtn{
+    margin-right: 10px;
+}
