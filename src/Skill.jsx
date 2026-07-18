@@ -1,16 +1,15 @@
-
-function Skill(props){
+function Skill({ skillList }) {
     return (
-        <>
-            <div id='skill'>
-                <h2>Skills</h2>
-                <p>Here are some of my skills:</p>
-                <ul>
-                    {props.skillList.map((s) => <li>{s}</li>)}
-                </ul>
-            </div>
-        </>
-    )
+        <section>
+            <h2>Skills</h2>
+
+            <ul>
+                {skillList.map((skill, index) => (
+                    <li key={index}>{skill}</li>
+                ))}
+            </ul>
+        </section>
+    );
 }
 
-export default Skill
+export default Skill;

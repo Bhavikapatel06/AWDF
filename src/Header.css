@@ -1,18 +1,11 @@
-#navBar{
-    display: flex;
-    justify-content: space-between;
+header {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
     padding: 20px;
 }
 
-#logo{
-    color: Black;
-}
-
-#navLinks{
-    display:flex;
-    justify-content: space-between;
-}
-
-.navBtn{
-    margin-right: 10px;
+header h1 {
+    margin: 0;
+    font-size: 40px;
 }

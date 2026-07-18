@@ -1,20 +1,11 @@
-import './Header.css'
+import "./Header.css";
 
-function Header(){
+function Header1() {
     return (
-        <>
-            <div id='navBar'>
-                <div>
-                    <h2 id='logo'>Portfolio</h2>
-                </div>
-                <div id='navLinks'>
-                    <a href="javascript:void(0)" className='navBtn'>Contact</a>
-                    <a href="javascript:void(0)" className='navBtn'>About</a>
-                    <a href="javascript:void(0)" className='navBtn'>Projects</a>
-                </div>
-            </div>
-        </>
-    )
+        <header>
+            <h1>Portfolio</h1>
+        </header>
+    );
 }
 
-export default Header
+export default Header1;

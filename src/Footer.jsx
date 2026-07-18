@@ -1,12 +1,9 @@
-
-function Footer(){
-    return(
-        <>
-            <footer id='footer'>
-                <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-            </footer>
-        </>
-    )
+function Footer() {
+    return (
+        <footer>
+            <p>© 2026 My Portfolio. All Rights Reserved.</p>
+        </footer>
+    );
 }
 
-export default Footer
+export default Footer;
