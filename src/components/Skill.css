@@ -1,0 +1,36 @@
+.skills-container {
+    padding: 24px 0;
+    margin: 0;
+    text-align: center;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+}
+
+.skill-pill {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-card);
+    color: var(--text-primary);
+    padding: 8px 18px;
+    border-radius: var(--border-radius-pill);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-sm);
+    cursor: default;
+}
+
+.skill-pill:hover {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: var(--accent-primary);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: var(--shadow-glow);
+    color: white;
+}
