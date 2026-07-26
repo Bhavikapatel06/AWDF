@@ -38,7 +38,7 @@ function Projects() {
                 throw new Error(`Failed to fetch: ${response.status} ${response.statusText}`);
             }
             const data = await response.json();
-            
+
             // Sort repositories by star count descending
             const sortedRepos = data.sort((a, b) => b.stargazers_count - a.stargazers_count);
             setRepos(sortedRepos);
