@@ -33,7 +33,7 @@
 
 body {
   margin: 0;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--bg-primary);
   background-image: 
     radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.05) 0px, transparent 50%),
@@ -94,7 +94,7 @@ input {
   border: 1px solid var(--border-card);
   border-radius: 8px;
   color: var(--text-primary);
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   transition: var(--transition-fast);
 }
@@ -110,7 +110,7 @@ button {
   background: var(--accent-gradient);
   color: white;
   border: none;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
