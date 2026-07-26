@@ -1,6 +1,6 @@
-import Header1 from "./Header";
-import About from "./About";
-import Skill from "./Skill";
+import Header1 from "../../components/Header/Header";
+import About from "../../components/About/About";
+import Skill from "../../components/Skill/Skill";
 
 function Home() {
     return (

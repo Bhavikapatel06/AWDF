@@ -1,6 +1,6 @@
 function About() {
     return (
-        <section>
+        <section className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <h2>About Me</h2>
 
             <p>
