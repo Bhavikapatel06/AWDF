@@ -5,7 +5,8 @@ header {
     text-align: center;
     padding: 60px 40px;
     margin: 40px auto 20px;
-    max-width: 900px;
+    width: 92%;
+    max-width: 1200px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: var(--shadow-md);

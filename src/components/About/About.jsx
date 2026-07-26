@@ -4,8 +4,9 @@ function About() {
             <h2>About Me</h2>
 
             <p>
-                I am a passionate developer with experience in creating modern web
-                applications.
+                Hi, I'm Bhavika Patel! I am a student software developer with a passion
+                for building clean, modern, and high-performance web applications. I love
+                pair-programming and exploring new frameworks to build robust web systems.
             </p>
         </section>
     );

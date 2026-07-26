@@ -85,9 +85,6 @@ function Projects() {
                                 <li key={repo.id} className="project-card">
                                     <div className="project-card-header">
                                         <h3>{repo.name}</h3>
-                                        <span className="star-count">
-                                            ★ {repo.stargazers_count}
-                                        </span>
                                     </div>
                                     <p>{repo.description || "No description provided."}</p>
                                     <div className="project-card-footer">

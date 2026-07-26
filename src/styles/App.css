@@ -36,9 +36,10 @@ nav a:active {
 }
 
 .container {
-  max-width: 900px;
+  width: 92%;
+  max-width: 1200px;
   margin: 40px auto;
-  padding: 40px 20px;
+  padding: 40px 30px;
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: var(--border-radius);
