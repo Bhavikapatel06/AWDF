@@ -1,16 +1,64 @@
-# React + Vite
+# Developer Portfolio Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive, and premium React portfolio web application built with Vite, CSS3 (glassmorphic theme), and React Router, showcasing modular components, clean routing, and dynamic data fetching.
 
-Currently, two official plugins are available:
+Developed as part of the **Advanced Web Development Frameworks (AWDF)** course curriculum (Practicals 1, 2, and 3).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Practical 1 & 2: Structure & Design
+- **Modular Directory Architecture**: Structured `src/` to separate global `styles`, reusable layout/UI `components` (Navbar, Footer, Header, Skill badges), and route-level `pages` (Home, Projects, Contact).
+- **React Routing**: Configured client-side multi-page routing via `react-router-dom` (`/`, `/projects`, `/contact`).
+- **Premium Dark-Theme Aesthetics**: Styled with Google Fonts (`Outfit`), custom radial backgrounds, glassmorphic layout panels (`backdrop-filter`), smooth hover actions, and slide-up entrance animations.
 
-## Expanding the Oxlint configuration
+### Practical 3: GitHub API Integration (Asynchronous Rendering)
+- **API Integration**: Integrates with the public GitHub REST API to fetch and render user repositories dynamically:
+  - Endpoint: `https://api.github.com/users/Bhavikapatel06/repos`
+- **Asynchronous Lifecycles**:
+  - **Loading State**: Displays a custom CSS spinner while a request is pending.
+  - **Error Boundary**: Renders an error box when network connection breaks or rate limits occur. Includes a **Retry Connection** button that re-triggers the fetch.
+  - **Success State**: Groups and renders fetched repositories as grid cards sorted by stargazers count (highest stars first).
+- **Search Filtering**: Real-time searching of repositories by name through a search query input field.
+- **Enhanced Card Details**: Each card renders the repository name, star count (★), description, primary programming language tag, and a link pointing directly to its GitHub source.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
+
+## 🛠️ Technology Stack
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite 8](https://vite.dev/)
+- **Router**: [React Router Dom 7](https://reactrouter.com/)
+- **Styling**: Pure CSS3 with variables, flexbox, CSS grids, and keyframe animations.
+- **Linting**: [Oxlint](https://oxc.rs/)
+
+---
+
+## ⚙️ Installation and Setup
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository_url>
+   cd Portfolio
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+   Open `http://localhost:5173` in your browser.
+
+4. **Production Build**:
+   ```bash
+   npm run build
+   ```
+
+5. **Linter Analysis**:
+   ```bash
+   npm run lint
+   ```
