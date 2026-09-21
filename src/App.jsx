@@ -1,10 +1,17 @@
+import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import PageLoader from "./components/PageLoader";
+import { lazyWithMinDelay } from "./utils/lazyWithDelay";
 import "./styles/App.css";
+
+// Route-Based Code Splitting via dynamic imports
+// Home loads standard lazy; Projects and Contact use lazyWithMinDelay (300ms)
+// to satisfy Supplementary Problem 2: avoiding loading flicker on fast connections.
+const Home = lazy(() => import("./pages/Home"));
+const Projects = lazyWithMinDelay(() => import("./pages/Projects"), 300);
+const Contact = lazyWithMinDelay(() => import("./pages/Contact"), 300);
 
 function App() {
   return (
@@ -18,11 +25,15 @@ function App() {
 
       <NavBar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      {/* Meaningful fallback UI rendered while chunk is loading */}
+      <Suspense fallback={<PageLoader />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/loading-demo" element={<PageLoader />} />
+        </Routes>
+      </Suspense>
 
       <Footer />
     </>
